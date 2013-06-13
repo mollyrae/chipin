@@ -18,3 +18,15 @@
     margin:-51px 0 0 0;
     border-bottom: 1px solid #247274;
 }
+
+/*Might pay to inclide these*/
+
+.login-hide:before,
+.login-hide:after {
+    content: " ";
+    display: table;
+}
+
+.login-hide:after {
+    clear: both;
+}
