@@ -1,0 +1,20 @@
+.lwa-links-register-inline{
+    color:white;
+    float:right;
+    background: #77A9AC;
+    border-bottom: 5px solid #247274;
+    font-size:1.25em;
+    border-radius:4px;
+    color: rgb(255, 255, 255);
+    padding:0.7em 5% 0.7em 5%;
+    margin:-40px 0 0 0;
+}
+
+.lwa-links-register-inline:hover{
+    background:#88bcbc;
+}
+
+.lwa-links-register-inline:active{
+    margin:-51px 0 0 0;
+    border-bottom: 1px solid #247274;
+}
