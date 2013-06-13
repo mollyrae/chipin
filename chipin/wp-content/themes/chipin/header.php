@@ -50,11 +50,16 @@
                     
                         <?php if(is_user_logged_in()){ ?>
 
+                            <?php $current_user = wp_get_current_user(); ?>
+                            <li><a href="<?php echo get_bloginfo('url'); ?>/user/<?php echo $current_user->user_login ?>"><?php echo $current_user->user_login ?>'s Profile</a></li>
+
                             <li><a href="<?php echo get_bloginfo('url'); ?>/start">Start a Project</a></li>
 
                         <?php }else{ ?>
 
-                            <li><a href="<?php echo get_bloginfo('url'); ?>/register">Start a Project</a></li>
+                            <li><a href="#" class="toggle">User Profile</a></li>
+
+                            <li><a href="#" class="toggle">Start a Project</a></li>
 
                         <?php }; ?>
 

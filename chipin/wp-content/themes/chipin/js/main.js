@@ -26,8 +26,10 @@ var $logIn = $('.login-hide');
 var toggleDuration = 400;
 
 $toggle.click(function(){
-	//alert("click");
+
 	$logIn.slideToggle(toggleDuration);
+	$('.lwa-form').show();
+	$('.lwa-register').hide();
 
 });
 
