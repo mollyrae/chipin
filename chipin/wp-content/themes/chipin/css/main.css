@@ -1,0 +1,1652 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Global styles for whole site
+   ========================================================================== */
+
+
+/* ////////////////Initialize//////////////// */
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    border: 0;
+    font-size: 1em;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(40,40,40);
+}
+
+/* ////////////////Fonts and Text Styles//////////////// */
+
+h1, h2, h3, h4, h5, h6 {
+    font: 2em/2.2em 'Source Sans Pro', 'century-gothic', helvetica;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px rgb(255,255,255);
+}
+
+h6 {
+    margin: 50px 0;
+    text-align: center;
+    color: rgb(255,255,255);
+    text-shadow: 1.5px 1.5px rgb(40,40,40);
+    font-weight: 400;
+}
+
+p {
+    font: 1.2em/1.4em 'Source Sans Pro', 'century-gothic', helvetica;
+    font-weight: 300;
+    color: rgb(40, 40, 40);
+}
+
+/* ////////////////Wrapper & Content Styles//////////////// */
+
+.wrapper {
+    width: 100%;
+    background: url("../img/content-bg.jpg");
+}
+
+.home-content{
+    width: 100%;
+    background: url("../img/texture-bottom.png") repeat-x;
+    position:relative;
+    top:-100px;
+}
+
+.content{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/* ////////////////Log In//////////////// */
+
+.login-hide {
+    display: none;
+}
+
+.lwa, .lwa-register{
+    width:100%;
+    min-height: 150px;
+    padding: 50px 0;
+    background-color: rgb(55, 55, 55);
+    display:block;
+/*    -webkit-box-shadow: 0px -10px 10px -10px rgb(0, 0, 0) inset;
+       -moz-box-shadow: 0px -10px 10px -10px rgb(0, 0, 0) inset;
+            box-shadow: 0px -10px 10px -10px rgb(0, 0, 0) inset;*/
+}
+
+.lwa table {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.lwa label, .lwa strong, .lwa a, .lwa p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.avatar img {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.lwa table td.lwa-info {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.lwa-form, #registerform, .lwa-remember{
+    width:60%;
+    height: 50px;
+    margin: 50px auto;
+    padding: 20px 0 0 0;
+}
+
+.lwa-form div, #registerform div {
+    float: left;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.lwa .lwa-submit-button, p.lwa-submit-button{
+    float: left;
+    width: 20%;
+    margin-right: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.lwa-remember-email {
+    width: 75%;
+    display: block;
+    margin-right: 5%;
+}
+
+.lwa-username input, .lwa-password input, .lwa-email input, .lwa-remember-email input{
+    width:100%;
+    height:50px;
+    margin:0 5% 0 0;
+    border-radius:2px;
+}
+
+.lwa-submit-button input, p.lwa-submit-button input, a#wp-logout{
+    display: block;
+    width:100%;
+    height:50px;
+    background: rgb(245, 134, 68);
+    border-bottom: 5px solid rgb(204, 104, 48);
+    font-size:1.25em;
+    border-radius:4px;
+    color: rgb(255, 255, 255);
+}
+
+a#wp-logout{
+    width:60%;
+    padding: 0 20%;
+    line-height: 50px;
+}
+
+.lwa-submit-button input:hover{
+    background: rgb(265, 154, 88);
+}
+
+.lwa-submit-button input:active{
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(204, 104, 48);
+}
+
+
+
+/* ////////////////Navigation//////////////// */
+
+
+nav {
+    width: 100%;
+    height: 115px;
+    background: url("../img/texture-top.png") repeat-x;
+    position:relative;
+    z-index:100;
+}
+
+nav img {
+    float: left;
+    padding: 28px;
+}
+
+nav ul {
+    width: 70%;
+    float: right;
+    margin: 0 50px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    height: 100px;
+    width: 100%;
+    font: 1.2em/1.4em 'Source Sans Pro', 'century-gothic', helvetica;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+nav ul li a:hover {
+    color: rgb(111,167,167);
+}
+
+.nav-control {
+    display: none;
+}
+
+/* ////////////////Footer//////////////// */
+
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: rgb(50, 50, 50);
+    position: relative;
+}
+
+a.terms {
+    width: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    line-height: 1;
+    position: relative;
+    bottom: 10px;
+    float: right;
+    clear: both;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul.social-media {
+    width: 210px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+ul.social-media li {
+    float: left;
+    display: block;
+    margin-left: 20px;
+}
+
+ul.social-media li a {
+    width: 50px;
+    height: 50px;
+}
+
+ul.social-media li a {
+background-position: 0 0;
+transition:background-position 0.7s;
+/* Safari */
+-webkit-transition:background-position 0.7s;
+}
+
+ul.social-media li a:hover {
+    background-position: 0 -50px
+}
+
+a.facebook {
+    background: url('../img/facebook.png') no-repeat;
+}
+
+a.twitter {
+    background: url('../img/twitter.png') no-repeat;
+}
+
+a.youtube {
+    background: url('../img/youtube.png') no-repeat;
+}
+
+footer ul {
+    width: 70%;
+    height: 80px;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+footer ul li a {
+    display: block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font: 1em/1.4em 'Source Sans Pro', 'century-gothic', helvetica;
+    font-weight: 300;
+    line-height: 80px;
+}
+
+footer ul li a:hover {
+    color: rgb(111, 167, 167);
+}
+
+.copyright {
+    width: 100%;
+    height: 35px;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    background: rgb(40, 40, 40);
+}
+
+.copyright p {
+    width: 350px;
+    margin: 0 auto;
+    color: rgb(200, 200, 200);
+    line-height: 35px;
+    font-size: 0.6em;
+}
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+
+/* ////////////////Header//////////////// */
+
+.home-header {
+    width: 100%;
+    height: 600px;
+    background: url('../img/home-feat.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0 50%;
+    position: relative;
+    top: -50px;
+}
+
+.home-header img {
+    height: auto;
+    width: 30%;
+    display: block;
+    position: relative;
+    top: 150px;
+    left: 35%;
+}
+
+.mission {
+    border-top: 1px solid rgb(255,255,255);
+    width: 50%;
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+}
+
+/* ////////////////Home Buttons//////////////// */
+
+.action-btns {
+    width: 50%;
+    position: absolute;
+    top: -20px;
+    left: 25%;
+    min-width: 380px;
+}
+
+.mobile-btns{
+    display:none;
+}
+
+.start-btn a, .join-btn a, .contact-btn a {
+    display: inline-block;
+    width: 45%;
+    height: 80px;
+    background: rgb(242, 100, 87);
+    border-radius: 5px;
+    border-bottom: 5px solid rgb(219, 24, 47);
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+}
+
+.join-btn a {
+    background: rgb(245, 134, 68);
+    border-bottom: 5px solid rgb(204, 104, 48);
+    margin-left: 10%;
+}
+
+.start-btn a:hover {
+    background: rgb(262, 120, 107);
+}
+
+.join-btn a:hover { 
+    background: rgb(265, 154, 88);
+}
+
+.start-btn a:active {
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(219, 24, 47);
+}
+
+.join-btn a:active {
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(204, 104, 48);
+}
+
+/* ////////////////How It Works//////////////// */
+
+.about {
+    margin: 150px auto 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.about hr {
+    width: 50%;
+    margin: 0 auto 30px auto;
+    height: 1px;
+    background: rgb(120, 120, 120);
+}
+
+.steps {
+    width: 30%;
+    margin-left: 3%;
+    float: left;
+}
+
+.steps img {
+    display: block;
+    width: 40%;
+    margin: 50px auto 50px auto;
+}
+
+p.blurb {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Start a Project Page
+   ========================================================================== */
+
+/* ////////////////Project form////////////////*/
+
+.create{
+    margin: 150px auto 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.start-project{
+    margin: 20px auto 0 auto;
+    width: 60%;
+}
+
+.pods-submittable{
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    font-size:1em;
+    height:auto;
+    position:relative;
+}
+
+.pods-submittable div{
+    margin: 5px 0;
+}
+
+.pods-submittable label{
+    float:left;
+    width:100%;
+    text-align:left; 
+    line-height:40px;
+    font-size:20px;
+    font-family:nexa_boldregular, Trebuchet, Helvetica, sans-serif;
+}
+
+.pods-submittable input[type=text]{
+    height:40px;
+    width:100%; 
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    border:2px #A9A9A9 solid;
+}
+
+.pods-submittable select{
+    border:none;
+    border-radius:0;    
+    border:2px #FFF solid;
+}
+
+.pods-submittable textarea{
+    height:200px;
+    width:100%;
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    border:2px #A9A9A9 solid;
+}
+
+a.button {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background: rgb(245, 134, 68);
+    border-bottom: 5px solid rgb(204, 104, 48);
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    padding: 20px 0;
+    line-height: 20px;
+}
+
+a.button:hover{
+    background: rgb(265, 154, 88);
+    cursor:pointer;
+}
+
+a.button:active{
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(204, 104, 48);
+}
+
+#wpadminbar {
+    display: none
+}
+
+.wp-core-ui .button#save {
+    display: none;
+}
+
+.pods-submit-button{
+    width: 250px;
+    height: 60px;
+    background: rgb(242, 100, 87);
+    border-radius: 5px;
+    border-bottom: 5px solid rgb(219, 24, 47);
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+}
+
+.pods-submit-button:hover{
+    background: rgb(262, 120, 107);
+    cursor:pointer;
+}
+
+.pods-submit-button:active{
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(219, 24, 47);
+}     
+
+.pods-submittable input[type=text]:hover,
+.pods-submittable textarea:hover{
+    cursor:pointer;
+    border:2px #77A9AC solid; 
+}
+
+.pods-submittable select{
+    cursor:pointer;
+    width: 96%;
+    height: 40px;
+    border:2px #A9A9A9 solid;
+    border-radius: 0;
+}
+
+.pods-submittable p#status{
+    margin-top:10px;
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    color:#F0833B;
+    font-size:1.2em;
+}
+
+.pods-submittable input[type=text].error-focus{
+    border:#F0833B solid 2px;
+}
+
+.pods-submittable textarea.error-focus{
+    border:#F0833B solid 2px;
+}
+
+/* ==========================================================================
+   Browse Projects Page
+   ========================================================================== */
+
+/* ////////////////Welcome To Browse Projects//////////////// */
+
+.browse {
+    width: 45%;
+    margin: 150px auto 0 auto;
+}
+
+.browse img, .browse h2, .browse p {
+    display: block;
+    float: left;
+    width: 15%;
+}
+
+.browse h2, .browse p {
+    width: 80%;
+    margin: 0 0 0 5%;
+}
+
+/* ////////////////Sort Projects//////////////// */
+
+.sorting {
+    width: 50%;
+    margin: 100px auto 0 auto;
+}
+
+.wrapper-dropdown {
+    /* Size and position */
+    position: relative; /* Enable absolute positionning for children and pseudo elements */
+    width: 98%;
+    height: 25px;
+    padding: 1%;
+    /*margin-left: 4%;*/
+    float: left;
+
+    /* Styles */
+    background: rgb(119, 169, 172);
+    outline: none;
+    cursor: pointer;
+
+    /* Font settings */
+    font-weight: bold;
+}
+
+.wrapper-dropdown:first-child {
+    margin: 0;
+}
+
+.wrapper-dropdown span {
+    color: #fff;
+    line-height: 25px;
+}
+
+.wrapper-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #fff;    
+}
+
+.wrapper-dropdown .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+
+    /* Styles */
+    background: #fff;
+    list-style: none;
+    font-weight: normal; /* Cancels previous font-weight: bold; */
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.wrapper-dropdown .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #9e9e9e;
+    padding: 10px 20px;
+}
+
+/* Hover state */
+.wrapper-dropdown .dropdown li:hover a {
+    background: #f3f8f8;
+}
+
+/* Active state */
+.wrapper-dropdown.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper-dropdown.active:after {
+    border-color: rgb(119, 169, 172) transparent;
+    border-width: 6px 6px 0 6px ;
+}
+
+.wrapper-dropdown.active {
+  background: rgb(119, 169, 172);
+  background: -moz-linear-gradient(left,  rgb(119, 169, 172) 0%, rgb(119, 169, 172) 90%, #ffffff 90%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(119, 169, 172)), color-stop(90%,rgb(119, 169, 172)), color-stop(90%,#ffffff), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(left,  rgb(119, 169, 172) 0%,rgb(119, 169, 172) 90%,#ffffff 90%,#ffffff 100%);
+  background: -o-linear-gradient(left,  rgb(119, 169, 172) 0%,rgb(119, 169, 172) 90%,#ffffff 90%,#ffffff 100%);
+  background: -ms-linear-gradient(left,  rgb(119, 169, 172) 0%,rgb(119, 169, 172) 90%,#ffffff 90%,#ffffff 100%);
+  background: linear-gradient(to right,  rgb(119, 169, 172) 0%,rgb(119, 169, 172) 90%,#ffffff 90%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc7de', endColorstr='#ffffff',GradientType=1 );
+}
+
+/* ////////////////Featured Projects//////////////// */
+
+.featured {
+    margin: 50px auto 0 auto;
+    width: 80%;
+}
+
+.project {
+    width: 23%;
+    height: 300px;
+    margin: 0 0 2% 2%;
+    float: left;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+}
+
+.project:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.crop {
+    width: 100%;
+    height: 200px;
+    -webkit-box-shadow: 0px 4px 4px -2px rgb(100, 100, 100);
+       -moz-box-shadow: 0px 0px 4px -2px rgb(100, 100, 100);
+            box-shadow: 0px 4px 4px -2px rgb(100, 100, 100);
+}
+
+.project h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.desc {
+    padding: 10px;
+}
+
+/* ==========================================================================
+   Single Project page
+   ========================================================================== */
+
+.top{
+    width: 70%;
+    margin: 20px auto 20px auto;
+}
+
+.top img{
+    margin-right: 5%;
+    float:left;
+    width:42%;
+}
+
+.details{
+    width: 53%;
+    margin: 0;
+    float: left;
+}
+
+.details ul{
+    padding: 0;
+}
+
+.details li{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.details span{
+    float: right;
+    text-align: left;
+    width: 75%;
+}
+
+.contact-btn a{
+    background: rgb(245, 134, 68);
+    border-bottom: 5px solid rgb(204, 104, 48);
+    margin-top:20px;
+    width:60%;
+}
+
+.contact-btn a:hover{ 
+    background: rgb(265, 154, 88);
+}
+
+.contact-btn a:active {
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(204, 104, 48);
+}
+
+.bottom{
+    width:70%;
+    margin: 0 auto;
+}
+
+.region{
+    width:30%;
+    height: auto;
+    float:left;
+    position:relative;
+}
+
+.region img {
+    display: block;
+    width: 70%;
+}
+
+.region-title{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.description{
+    width:70%;
+    float:left;
+    margin-left: 0%;
+}
+
+.description p{
+    font-size: 16px;
+    line-height: 1.6em;
+    padding:5%;
+}
+
+/* ==========================================================================
+   Sign up Page
+   ========================================================================== */
+
+/* ////////////////Header////////////////*/
+
+.header{
+    margin: 100px auto 0 auto;
+    width: 60%;
+    text-align: left;
+}
+
+.symbol{
+    float:left;
+    width:15%;
+}
+
+.symbol img{
+    width:100%;
+    margin-top:30px;
+    min-width:115px;
+}
+
+.intro{
+    float:left;
+    width:75%;
+    margin-left:50px;
+}
+
+/* ////////////////sign up form////////////////*/
+
+.sign-up{
+    margin: 20px auto 0 auto;
+    width: 60%;
+}
+
+.signup-form{
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    font-size:1em;
+    height:auto;
+    position:relative;
+}
+
+.signup-form div{
+    margin:20px 0;
+    width:100%; 
+}
+
+.signup-form label{
+    float:left;
+    width:100%;
+    text-align:left; 
+    line-height:40px;
+    font-size:20px;
+    font-family:nexa_boldregular, Trebuchet, Helvetica, sans-serif;
+}
+
+.signup-form input[type=text], .signup-form input[type=password]{
+    height:40px;
+    width:100%; 
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    border:2px #A9A9A9 solid;
+}
+
+.signup-form select{
+    border:none;
+    border-radius:0;    
+    border:2px #FFF solid;
+}
+
+.signup-form textarea{
+    height:200px;
+    width:100%;
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    border:2px #A9A9A9 solid;
+}
+
+.signup-form input[type=image]{
+    width: 25%;
+    height: 20px;
+    background: rgb(245, 134, 68);
+    border-bottom: 5px solid rgb(204, 104, 48);
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    padding: 20px 0;
+    line-height: 60px;
+}
+
+.signup-form input[type=image]:hover{
+    background: rgb(265, 154, 88);
+    cursor:pointer;
+}
+
+.signup-form input[type=image]:active{
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(204, 104, 48);
+    line-height: 60px;
+}  
+
+.signup-form input[type=submit]{
+    width: 25%;
+    height: 60px;
+    background: rgb(242, 100, 87);
+    border-radius: 5px;
+    border-bottom: 5px solid rgb(219, 24, 47);
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+}
+
+.signup-form input[type=submit]:hover{
+    background: rgb(262, 120, 107);
+    cursor:pointer;
+}
+
+.signup-form input[type=submit]:active{
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(219, 24, 47);
+}     
+
+.signup-form input[type=text]:hover,
+.signup-form textarea:hover, .signup-form input[type=password]:hover{
+    cursor:pointer;
+    border:2px #77A9AC solid; 
+}
+
+.signup-form select:hover{
+    cursor:pointer;
+    border:2px #77A9AC solid;
+}
+
+.signup-form p#status{
+    margin-top:10px;
+    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
+    color:#F0833B;
+    font-size:1.2em;
+}
+
+.signup-form input[type=text].error-focus, .signup-form input[type=password].error-focus{
+    border:#F0833B solid 2px;
+}
+
+.signup-form textarea.error-focus{
+    border:#F0833B solid 2px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1400px) {
+
+    /*////////////////browse/////////*/
+
+    .header {
+        width: 90%;
+    }
+
+    .featured {
+        width: 95%;
+    }
+
+    /*////////////////start a project/////////*/
+
+    .start-project{
+        width: 95%;
+    }
+
+}
+
+    
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) and (min-device-width: 1024px) and (orientation: landscape) {
+
+    body{
+        font-size: .8em
+    }
+
+
+    /* ////////////////Header//////////////// */
+
+    .home-header {
+        width: 100%;
+        top: -80px;
+    }
+
+    .home-content{
+        width: 100%;
+        background: url("../img/texture-bottom.png") repeat-x;
+        position:relative;
+        top:-155px;
+    }
+    .content{
+        clear:both;
+        width: 100%;
+        margin-bottom:50px;
+    }
+
+    .header{
+        margin: 10px auto 0 auto;
+        width: 90%;
+        text-align: left;
+    }
+
+    .about{
+        width:90%;
+    }
+
+    /*////////////////footer/////////*/
+
+    .footer-nav {
+        display:none;
+    }
+
+
+    /*/////////////browse projects///////////*/
+
+    .search{
+        width:30%;
+    }
+
+    .all-projects{
+        width:60%;
+    }
+
+    .browse-project {
+        width:80%;
+        clear:both;
+    }
+    /*/////////////featured projects///////////*/
+
+    .project {
+        width: 46%;
+        margin:2% 0 0 2%;
+        float:left;
+    }
+    .project:first-child {
+        width: 46%;
+        margin:2% 0 0 2%;
+        float:left;
+    }
+
+    /*/////////buttons//////////////*/
+
+    .project-form input[type=submit], .signup-form input[type=submit], .project-form input[type=image] {
+        width: 35%;
+    }
+
+    /*/////////login//////////////*/
+
+    .log-in-form {
+        width: 80%;
+    }
+
+    /*///////////single page//////////////*/
+    
+    .top, .bottom{
+        width:90%;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .home-header {
+        background-size: 150% auto;
+        top: -100px;
+    }
+
+    .nav-control{ 
+        display:block;
+        position:absolute;
+        right:0;
+    }
+
+    .nav-control img{
+        width:40%;
+        margin-top:5%;
+    }
+
+    .main ul{
+        display: none;
+        width:100%;
+        margin: 0 0 10px 0;
+        padding: 0;
+        list-style: none;
+        clear:both;
+        top: 80px;
+        position: absolute;
+        background: url("../img/content-bg.jpg");
+        -webkit-box-shadow: 0px 4px 4px -2px rgb(100, 100, 100);
+           -moz-box-shadow: 0px 0px 4px -2px rgb(100, 100, 100);
+                box-shadow: 0px 4px 4px -2px rgb(100, 100, 100);
+    }
+
+    .main ul li {
+        display:inline;
+        line-height:40px;
+        width:100%;
+        text-align:center;
+        font-size:20px;
+    }
+
+    .main ul li a {
+        display: inline;
+        width: 100%;
+        line-height: 40px;
+    }
+
+    .action-btns{
+        min-width: 0px;
+        left: 15%;
+        width: 70%;
+    }
+
+    /*////////////////single project/////////////*/
+
+    .top img{
+        width:100%;
+    }
+
+    .details{
+      width:100%;  
+    }
+
+    .description{
+        width:100%;
+    }
+
+    .region{
+        width:70%;
+        margin-left:15%;
+    }
+
+    .region img{
+        width:55%;
+    }
+
+    .contact-btn a{
+        min-width: 0px;
+        margin-left: 15%;
+        width: 70%;
+    }
+
+}
+
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 480px) and (orientation: landscape) {
+
+    /*//////////////index//////////////*/
+
+    .main{
+        width:100%;
+        height:110px;
+        position:relative;
+        z-index:9999;
+    }
+
+    .home-header {
+        width: 100%;
+        height: 0;
+        background: none;
+        position:static;
+    }
+
+    .home-header img {
+        display:none;
+        position: static;
+    }
+
+    .mission {
+        display:none;
+    }
+
+    .home-content{
+        position:relative;
+        top: 0;
+        margin-top: 50px;
+        width:100%;
+        clear:both;
+    }
+
+    .action-btns{
+        top: 0;
+        width: 100%;
+        left: 5%;
+        margin: 0 auto;
+    }
+
+    .join-btn a, .start-btn a, .join-btn a, .browse-btn a {
+        clear:both;
+        width:90%;
+        position:relative;
+        left: 0;
+        margin: 0 0 20px 0;
+    }
+
+     .about{
+        width:90%;
+        margin: 200px auto 0 auto;
+     } 
+     p.blurb{
+        width:100%;
+        margin-bottom:20px;
+     }
+     .steps{
+        width:100%;
+        clear:both;
+        margin:5px auto;
+        /*border-top: 1px #787878 solid;*/
+     }
+
+     .steps img{
+        margin:20px auto;
+     }
+
+     /*///////////footer/////////*/
+
+    .copyright p {
+        width: 100%;
+        text-align: center;
+        font-size: .7em;
+    }
+
+    ul.social-media{
+        margin:10px 7.384%;
+    }
+
+    /* ==========================================================================
+       New Project Page
+       ========================================================================== */
+
+    /* ////////////////Create a Project form////////////////*/
+
+    .header{
+        margin: 10px auto 0 auto;
+        width: 90%;
+        text-align: left;
+    }
+
+    .symbol{
+        clear:both;
+        width:100%;
+    }
+
+    .symbol img{
+        width:30%;
+        margin-left:35%;
+        min-width:0;
+        margin-top:0;
+    }
+
+    .intro{
+        clear:both;
+        width:100%;
+        margin-left:0;
+        text-align: center;
+    }
+
+    .start-project{
+        margin: 20px auto 0 auto;
+        width: 90%;
+    }
+
+    .project-form label{
+        font-size:1.3em;
+    }
+
+    .project-form input[type=image]{
+        width: 70%;
+        font-size: 1.8em;
+    }
+
+    .project-form input[type=submit]{
+        width: 70%;
+        font-size: 1.8em;
+    }
+
+    /*//////////////////signup form////////////*/
+    .sign-up{
+        margin: 20px auto 0 auto;
+        width: 90%;
+    }
+
+    .signup-form label{
+        font-size:1.3em;
+    }
+
+    .signup-form input[type=submit]{
+        width: 70%;
+        font-size: 1.8em;
+    }
+
+    /*///////////browse projects/////////////////*/
+
+      
+    .all-projects{
+        clear:both;
+        width:90%;
+        margin-top:20px;
+        margin-left:5%;
+    }
+
+    .browse-project{
+        clear:both;
+        width:100%;
+        margin:20px 0 0 0;
+    }
+
+    .sorting {
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    .wrapper-dropdown {
+        padding: 2%;
+
+    }
+
+    /* ==========================================================================
+       User Home Page (successful login)
+       ========================================================================== */
+    .user-header{
+        height:110px;
+    }
+
+    .user-header img {
+        width: 60%;
+        top: 20px;
+        left: 20%;
+    }
+
+    .newRow{
+        clear:both;
+        width:100%;
+    }
+
+    .user-btns {
+       width: 70%;
+        min-width:0;
+        margin:20px auto;
+    }
+
+    .center-text{
+        width: 90%;
+        text-align: center;
+        margin:0 auto;
+    }
+    /* ////////////////Featured Projects//////////////// */
+
+    .featured {
+        margin: 0 auto;
+        width: 90%;
+        font-size:1em;
+    }
+
+    .project:first-child {
+        clear:both;
+        width: 100%;
+        margin-left: 0;
+    }    
+
+    .project {
+        clear:both;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    /*///////////////toggle styling///////////*/
+
+    .log-in{
+        width:100%;
+        height:260px;
+    }
+
+    .log-in-form{
+        width: 90%;
+        margin:0;
+        padding:1.5em 5%;
+    }
+
+    .log-in div{
+        clear:both;
+        width:100%;
+    }
+
+    .log-in-form #email{
+        width:100%;
+        margin-left:0;
+        clear:both;
+    }
+
+    .log-in-form #password{
+        width:100%;
+        margin-top:5px;
+        clear:both;
+    }
+
+    .log-in-form .login-btn {
+        width: 100%;
+    }
+
+    .log-in-form #submit{
+        width:70%;
+        min-width:0;
+        margin:5px 15%;
+        clear:both;
+    }
+
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
