@@ -1,0 +1,150 @@
+/* ////////////////Log In//////////////// */
+
+.login-hide {
+    display: none;
+}
+
+.lwa, .lwa-register{
+    width:100%;
+    padding: 50px 0;
+    background-color: rgb(55, 55, 55);
+    display:block;
+/*    -webkit-box-shadow: 0px -10px 10px -10px rgb(0, 0, 0) inset;
+       -moz-box-shadow: 0px -10px 10px -10px rgb(0, 0, 0) inset;
+            box-shadow: 0px -10px 10px -10px rgb(0, 0, 0) inset;*/
+}
+
+.login-hide:before,
+.login-hide:after {
+    content: " ";
+    display: table;
+}
+
+.login-hide:after {
+    clear: both;
+}
+
+.lwa table {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+
+.lwa label, .lwa strong, .lwa a, .lwa p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.avatar img {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.lwa table td.lwa-info {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.lwa-form, #registerform, .lwa-remember{
+    width:60%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0;
+    /*background-color: red;*/
+}
+
+.lwa-form .lwa-links{
+    width:100%;
+    /*background-color: yellow;*/
+}
+
+.lwa-form div, #registerform div {
+    float: left;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.lwa .lwa-submit-button, p.lwa-submit-button{
+    float: left;
+    width: 20%;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top:2em;
+}
+
+.lwa-remember-email {
+    width: 75%;
+    display: block;
+    margin-right: 5%;
+}
+
+.lwa-username input, .lwa-password input, .lwa-email input, .lwa-remember-email input{
+    width:100%;
+    height:50px;
+    margin:0 5% 0 0;
+    border-radius:2px;
+}
+
+.lwa-username label{
+    margin:0;
+}
+
+#lwa_user_login{
+    margin:0;
+}
+
+.lwa-submit-button input, p.lwa-submit-button input, a#wp-logout{
+    display: block;
+    width:100%;
+    height:50px;
+    background: rgb(245, 134, 68);
+    border-bottom: 5px solid rgb(204, 104, 48);
+    font-size:1.25em;
+    border-radius:4px;
+    color: rgb(255, 255, 255);
+}
+
+a#wp-logout{
+    width:60%;
+    padding: 0 20%;
+    line-height: 50px;
+}
+
+.lwa-submit-button input:hover{
+    background: rgb(265, 154, 88);
+}
+
+.lwa-submit-button input:active{
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(204, 104, 48);
+}
+
+.lwa .lwa-links-register-inline{
+    color:white;
+    float:right;
+    background: #77A9AC;
+    border-bottom: 5px solid #247274;
+    font-size:1.25em;
+    border-radius:4px;
+    color: rgb(255, 255, 255);
+    padding:0.25em 6.7% 0.25em 6.7%;
+    margin:-3.5em 0 0 0;
+}
+
+.lwa .lwa-links-register-inline:hover{
+    background:#88bcbc;
+}
+
+.lwa .lwa-links-register-inline:active{
+    margin:-3.40em 0 0 0;
+    border-bottom: 1px solid #247274;
+}
+
+/*END OF LOG IN STYLING*/
+
