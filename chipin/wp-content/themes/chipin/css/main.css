@@ -91,6 +91,12 @@ h1 {
     font-size: 2.5em;
     color: rgba(0,0,0,0.6);
     text-shadow: 2px 2px rgb(255,255,255);
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 0;
 }
 
 h6 {
@@ -155,6 +161,18 @@ p {
     line-height: 2em;
 }
 
+.lwa-submit-button {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+a.lwa-links-remember {
+    position: relative;
+    top: 120px;
+    font-size: 1em;
+}
+
 .avatar img {
     margin-right: 20px;
     width: 100px;
@@ -167,6 +185,19 @@ p {
     height: 100px;
 }
 
+.change-info {
+    width: 90%;
+    display: block;
+    margin: 50px auto 0 auto;
+    padding-bottom: 100px;
+}
+
+.change-info label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
 .lwa-form, #registerform, .lwa-remember{
     width:60%;
     height: 150px;
@@ -174,18 +205,24 @@ p {
     padding: 0;
 }
 
-.lwa-form div, #registerform div {
+.lwa-username, .lwa-password, .lwa-email, .lwa-remember-email, .change-info div {
     float: left;
     width: 35%;
     margin-right: 5%;
 }
 
-.lwa .lwa-submit-button, p.lwa-submit-button, .lwa a.lwa-links-register-inline{
+.lwa .lwa-submit-button{
     float: left;
     width: 20%;
     margin-right: 0;
     position: absolute;
     right: 0;
+}
+
+.change-info .update-button{
+    float: left;
+    width: 20%;
+    margin-right: 0;
 }
 
 .lwa-remember-email {
@@ -194,17 +231,19 @@ p {
     margin-right: 5%;
 }
 
-.lwa-username input, .lwa-password input, .lwa-email input, .lwa-remember-email input, .lwa a.lwa-links-register-inline{
-    width:100%;
+.lwa-divs-only .lwa-username input[type="text"], .lwa-password input, .lwa-divs-only .lwa-email input[type="text"], .lwa-remember-email input, .lwa a.lwa-links-register-inline, .new-email, .new-password{
+    width:95%;
     height:50px;
-    margin:0 5% 0 0;
+    margin:0;
+    padding: 0 2.5%;
     border-radius:2px;
 }
 
-.lwa-submit-button input, p.lwa-submit-button input, a#wp-logout, .lwa a.lwa-links-register-inline{
+.lwa-submit-button input, .lwa-submit-button input, a#wp-logout, .lwa a.lwa-links-register-inline, .update-pass{
     display: block;
     width:100%;
     height:50px;
+    margin: 0;
     background: rgb(245, 134, 68);
     border-bottom: 5px solid rgb(204, 104, 48);
     font-size:1.25em;
@@ -212,19 +251,50 @@ p {
     color: rgb(255, 255, 255);
 }
 
-a#wp-logout, .lwa a.lwa-links-register-inline{
+.update-pass {
+    line-height: 50px;
+    padding: 0 30%;
+    width: 40%;
+}
+
+.lwa a.lwa-links-register-inline{
+    width: 10%;
+    padding: 0 5%;
+    margin-right: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    line-height: 50px;
+    background: #77A9AC;
+    border-bottom: 5px solid #247274;
+}
+
+.lwa-links label, .lwa-links input {
+    display: none;
+}
+
+a#wp-logout{
     width:60%;
     padding: 0 20%;
     line-height: 50px;
 }
 
-.lwa-submit-button input:hover{
+.lwa-submit-button input:hover, a#wp-logout:hover, .lwa a.lwa-links-register-inline:hover, .update-pass:hover{
     background: rgb(265, 154, 88);
 }
 
-.lwa-submit-button input:active{
+.lwa-submit-button input:active, a#wp-logout:active, .lwa a.lwa-links-register-inline:active, .update-pass:active{
     margin-top: 4px;
     border-bottom: 1px solid rgb(204, 104, 48);
+}
+    
+.lwa a.lwa-links-register-inline:hover{
+    background:#88bcbc;
+}
+
+.lwa a.lwa-links-register-inline:active{
+    margin-top:4px;
+    border-bottom: 1px solid #247274;
 }
 
 
@@ -288,14 +358,13 @@ footer {
 }
 
 a.terms {
-    width: 50px;
-    display: inline-block;
+    width: 130px;
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
     font-size: 0.8em;
-    line-height: 1;
     position: relative;
     bottom: 10px;
+    right: 45%;
     float: right;
     clear: both;
 }
@@ -441,10 +510,11 @@ footer ul li a:hover {
     display:none;
 }
 
-.start-btn a, .join-btn a, .contact-btn a {
+.start-btn a, .join-btn a, .contact-btn a, .delete-btn a {
     display: inline-block;
     width: 45%;
     height: 80px;
+    margin: 0;
     background: rgb(242, 100, 87);
     border-radius: 5px;
     border-bottom: 5px solid rgb(219, 24, 47);
@@ -461,20 +531,20 @@ footer ul li a:hover {
     margin-left: 10%;
 }
 
-.start-btn a:hover {
+.start-btn a:hover, .delete-btn a:hover {
     background: rgb(262, 120, 107);
 }
 
-.join-btn a:hover, .delete-btn a:hover { 
+.join-btn a:hover { 
     background: rgb(265, 154, 88);
 }
 
-.start-btn a:active {
+.start-btn a:active, .delete-btn a:active {
     margin-top: 4px;
     border-bottom: 1px solid rgb(219, 24, 47);
 }
 
-.join-btn a:active, .delete-btn a:active {
+.join-btn a:active {
     margin-top: 4px;
     border-bottom: 1px solid rgb(204, 104, 48);
 }
@@ -484,8 +554,8 @@ footer ul li a:hover {
     display: inline-block;
     width: 45%;
     height: 40px;
-    background: rgb(245, 134, 68);
-    border-bottom: 5px solid rgb(204, 104, 48);
+    background: rgb(242, 100, 87);
+    border-bottom: 5px solid rgb(219, 24, 47);
     border-radius: 5px;
     float: left;
     text-align: center;
@@ -532,10 +602,14 @@ footer ul li a:hover {
     float: left;
 }
 
+.steps p {
+    margin-top: 0;
+}
+
 .steps img {
     display: block;
     width: 40%;
-    margin: 50px auto 50px auto;
+    margin: 50px auto 30px auto;
 }
 
 p.blurb {
@@ -583,7 +657,6 @@ p.blurb {
 .pods-submittable input[type=text]{
     height:40px;
     width:100%; 
-    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
     border:2px #A9A9A9 solid;
 }
 
@@ -596,14 +669,14 @@ p.blurb {
 .pods-submittable textarea{
     height:200px;
     width:100%;
-    /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
     border:2px #A9A9A9 solid;
 }
 
-a.button {
+.pods-form-front  a.button {
     position: relative;
     width: 200px;
     height: 20px;
+    margin: 0;
     background: rgb(245, 134, 68);
     border-bottom: 5px solid rgb(204, 104, 48);
     border-radius: 5px;
@@ -710,17 +783,17 @@ a.button:active{
 /* ////////////////Sort Projects//////////////// */
 
 .sorting {
-    width: 50%;
+    width: 70%;
     margin: 100px auto 0 auto;
 }
 
 .wrapper-dropdown {
     /* Size and position */
     position: relative; /* Enable absolute positionning for children and pseudo elements */
-    width: 98%;
+    width: 46%;
     height: 25px;
     padding: 1%;
-    /*margin-left: 4%;*/
+    margin-left: 4%;
     float: left;
 
     /* Styles */
@@ -733,7 +806,7 @@ a.button:active{
 }
 
 .wrapper-dropdown:first-child {
-    margin: 0;
+    margin-left: 0;
 }
 
 .wrapper-dropdown span {
@@ -811,20 +884,17 @@ a.button:active{
 
 .featured {
     margin: 50px auto 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
 .project {
-    width: 23%;
-    height: 400px;
+    width: 22%;
+    min-height: 300px;
     margin: 0 0 2% 2%;
+    padding-bottom: 10px;
     float: left;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 3px;
-}
-
-.project:nth-child(4n+1) {
-    margin-left: 0;
 }
 
 .crop {
@@ -847,6 +917,16 @@ a.button:active{
 
 .username {
     text-transform:capitalize;
+}
+
+.personal-info {
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.personal-info h1 {
+    text-align: center;
 }
 
 /* ==========================================================================
@@ -943,7 +1023,7 @@ a.button:active{
 /* ////////////////Header////////////////*/
 
 .header{
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     width: 60%;
     text-align: left;
 }
@@ -1109,6 +1189,10 @@ a.button:active{
         width: 95%;
     }
 
+    .nav ul {
+        display: block;
+    }
+
 }
 
     
@@ -1169,15 +1253,16 @@ a.button:active{
         width:80%;
         clear:both;
     }
+
+    .sorting {
+        width: 90%;
+        margin: 20px auto;
+    }
+
     /*/////////////featured projects///////////*/
 
     .project {
-        width: 46%;
-        margin:2% 0 0 2%;
-        float:left;
-    }
-    .project:first-child {
-        width: 46%;
+        width: 30%;
         margin:2% 0 0 2%;
         float:left;
     }
@@ -1190,8 +1275,8 @@ a.button:active{
 
     /*/////////login//////////////*/
 
-    .log-in-form {
-        width: 80%;
+    .lwa form {
+        width: 90%;
     }
 
     /*///////////single page//////////////*/
@@ -1202,7 +1287,7 @@ a.button:active{
 
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 845px) {
 
     .home-header {
         background-size: 150% auto;
@@ -1224,20 +1309,20 @@ a.button:active{
         display: none;
         width:100%;
         margin: 0 0 10px 0;
-        padding: 0;
+        padding: 0 0 10px 0;
         list-style: none;
         clear:both;
         top: 80px;
         position: absolute;
         background: url("../img/content-bg.jpg");
-        -webkit-box-shadow: 0px 4px 4px -2px rgb(100, 100, 100);
-           -moz-box-shadow: 0px 0px 4px -2px rgb(100, 100, 100);
-                box-shadow: 0px 4px 4px -2px rgb(100, 100, 100);
+        -webkit-box-shadow: 0px 4px 4px -2px rgb(0, 0, 0);
+           -moz-box-shadow: 0px 0px 4px -2px rgb(0, 0, 0);
+                box-shadow: 0px 4px 4px -2px rgb(0, 0, 0);
     }
 
     .main ul li {
         display:inline;
-        line-height:40px;
+        line-height:45px;
         width:100%;
         text-align:center;
         font-size:20px;
@@ -1283,8 +1368,37 @@ a.button:active{
         margin-left: 15%;
         width: 70%;
     }
+   
+    /*/////////////featured projects///////////*/
 
-}
+    .project {
+        width: 46%;
+        margin:2% 0 0 2%;
+        float:left;
+    }
+
+    .personal-info {
+        width: 90%;
+    }
+
+    .change-info {
+        width: 100%;
+        display: block;
+        margin: 50px auto 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .change-info div {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .change-info .update-button{
+        float: left;
+        width: 100%;
+        margin-right: 0;
+    }
 
 }
 
@@ -1326,7 +1440,7 @@ a.button:active{
     .action-btns{
         top: 0;
         width: 100%;
-        left: 5%;
+        left: 0;
         margin: 0 auto;
     }
 
@@ -1335,7 +1449,7 @@ a.button:active{
         width:90%;
         position:relative;
         left: 0;
-        margin: 0 0 20px 0;
+        margin: 0 5% 20px 5%;
     }
 
      .about{
@@ -1405,18 +1519,16 @@ a.button:active{
         width: 90%;
     }
 
-    .project-form label{
-        font-size:1.3em;
+    .pods-form-fields {
+        padding: 0;
     }
 
-    .project-form input[type=image]{
-        width: 70%;
-        font-size: 1.8em;
+    .pods-form-fields li, .pods-form-front li .pods-field-input {
+        width: 100%;
     }
 
-    .project-form input[type=submit]{
-        width: 70%;
-        font-size: 1.8em;
+    .pods-form-front li .pods-field-input input {
+        padding: 0 2%;
     }
 
     /*//////////////////signup form////////////*/
@@ -1451,13 +1563,15 @@ a.button:active{
     }
 
     .sorting {
-        width: 85%;
+        width: 90%;
         margin: 20px auto;
     }
 
     .wrapper-dropdown {
-        padding: 2%;
-
+        width: 100%;
+        height: 25px;
+        padding: 1%;
+        margin: 0 0 10px 0;
     }
 
     /* ==========================================================================
@@ -1489,6 +1603,7 @@ a.button:active{
         text-align: center;
         margin:0 auto;
     }
+
     /* ////////////////Featured Projects//////////////// */
 
     .featured {
@@ -1511,45 +1626,64 @@ a.button:active{
 
     /*///////////////toggle styling///////////*/
 
-    .log-in{
+    .lwa{
         width:100%;
-        height:260px;
+        height:300px;
     }
 
-    .log-in-form{
+    .lwa div{
+        clear:both;
+        width:100%;
+    }
+
+    .lwa .lwa-username, .lwa-password {
+        margin-bottom: 10px;
+    }
+
+    .lwa form, .lwa-remember, .lwa .lwa-register{
         width: 90%;
+        height: 300px;
         margin:0;
-        padding:1.5em 5%;
+        padding: 0 5%;
+        position: static;
     }
 
-    .log-in div{
-        clear:both;
-        width:100%;
-    }
-
-    .log-in-form #email{
-        width:100%;
-        margin-left:0;
-        clear:both;
-    }
-
-    .log-in-form #password{
-        width:100%;
-        margin-top:5px;
-        clear:both;
-    }
-
-    .log-in-form .login-btn {
+    #registerform {
         width: 100%;
+        padding: 0;
+        margin: 0;
+        position: static;
     }
 
-    .log-in-form #submit{
-        width:70%;
-        min-width:0;
-        margin:5px 15%;
-        clear:both;
+    .lwa .lwa-submit-button {
+        width: 100%;
+        position: static;
     }
 
+    .lwa a.lwa-links-register-inline {
+        width: 20%;
+        float: left;
+        position: relative;
+        padding: 0 40%;
+        top: -15px;
+        left: 0;
+    }
+
+    .lwa-links {
+        height: 60px;
+    }
+
+    a.lwa-links-remember {
+        top: 70px;
+    }
+
+    ul.social-media {
+        margin: 10px 15%;
+    }
+
+    a.terms {
+        right: 30%;
+    }
 
 }
 

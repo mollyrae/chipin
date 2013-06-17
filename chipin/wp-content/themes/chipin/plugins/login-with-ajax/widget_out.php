@@ -30,12 +30,10 @@
 		
 		<div class="lwa-links">
 			<input name="rememberme" type="checkbox" class="lwa-rememberme" value="forever" /> <label><?php esc_html_e( 'Remember Me','login-with-ajax' ) ?></label>
-			<br />
         	<?php if( !empty($lwa_data['remember']) ): ?>
 			<a class="lwa-links-remember" href="<?php echo esc_attr(LoginWithAjax::$url_remember); ?>" title="<?php esc_attr_e('Password Lost and Found','login-with-ajax') ?>"><?php esc_attr_e('Lost your password?','login-with-ajax') ?></a>
 			<?php endif; ?>
 			<?php if ( get_option('users_can_register') && !empty($lwa_data['registration']) ) : ?>
-			<br />  
 			<a href="<?php echo esc_attr(LoginWithAjax::$url_register); ?>" class="lwa-links-register-inline"><?php esc_html_e('Register','login-with-ajax'); ?></a>
 			<?php endif; ?>
 		</div>
@@ -71,12 +69,12 @@
 				//If you want other plugins to play nice, you need this: 
 				do_action('register_form'); 
 			?>
-			<p class="lwa-submit-button">
-				<?php esc_html_e('A password will be e-mailed to you.','login-with-ajax') ?>
+			<div class="lwa-submit-button">
+				<p>A password will be e-mailed to you.</p>
 				<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="<?php esc_attr_e('Register', 'login-with-ajax'); ?>" tabindex="100" />
 				<a href="#" class="lwa-links-register-inline-cancel"><?php esc_html_e("Cancel", 'login-with-ajax'); ?></a>
 				<input type="hidden" name="login-with-ajax" value="register" />
-			</p>
+			</div>
 		</form>
 	</div>
 	<?php endif; ?>

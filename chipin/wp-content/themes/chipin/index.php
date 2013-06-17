@@ -26,7 +26,7 @@
         <?php }else{ ?>
 
             <div class="start-btn">
-                <a href="<?php echo get_bloginfo('url'); ?>/register">Start a Project</a>
+                <a href="http://localhost:8888/chipin/wp-login.php?action=register" class="lwa-links-register-inline toggle">Start a Project</a>
             </div>
 
         <?php }; ?>

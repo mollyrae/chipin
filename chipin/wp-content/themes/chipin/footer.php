@@ -18,7 +18,7 @@
                         <li><a href="#">Register</a></li>
                     </ul>
 
-                    <a class="terms" href="terms.php">Terms</a>
+                    <a class="terms" href="terms.php">Terms & Conditions</a>
 
                 </div>
 

@@ -14,6 +14,11 @@
     $projectParams = array('orderby' => 'id ASC', 'limit'=>-1);
     $projectPod    ->find($projectParams);
 
+    # Get the information on the different categories from Pods
+    $categoryPod = pods('category');
+    $categoryparams = array('orderby' => 'name ASC', 'limit'=>-1);
+    $categoryPod ->find($categoryparams);
+
     //$projectParams  = array('orderby' => 'id ASC', 'limit'=>-1, 'where'=>"project.permalink = '$projPerma'");
 
 ?>
@@ -28,11 +33,22 @@
         </div>
         <div class="intro">
             <h1>Browse all projects</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Check out all the projects you could chip in on, or use our smart filter system to find specific projects.</p>
         </div> 
     </section> 
 
     <div class="sorting clearfix">
+
+         <div id="dd" class="wrapper-dropdown" tabindex="2">
+            <span id="category">Category</span>
+            <ul class="dropdown category">
+                
+                <?php while($categoryPod->fetch()): ?>
+                    <li><a class="category" href="#" data-category="<?php echo $categoryPod->field('permalink'); ?>"><?php echo $categoryPod->field('name'); ?></a></li>
+                <?php endwhile; ?>
+            
+            </ul>
+        </div>
 
         <div id="dd-2" class="wrapper-dropdown" tabindex="2">
             <span id="location">Location</span>
@@ -51,17 +67,17 @@
 
         <?php $locationPod->reset(); while($projectPod->fetch()): ?>
 
-            <div class="project clearfix" data-location-name="<?php echo $projectPod ->field('region.permalink'); ?>">
+            <div class="project clearfix" data-location-name="<?php echo $projectPod ->field('region.permalink'); ?>" data-category-name="<?php echo $projectPod ->field('category.permalink'); ?>">
 
                 <a href="<?php echo get_bloginfo('url'); ?>/single/<?php echo $projectPod->display('region'); ?>/<?php echo $projectPod->field('permalink'); ?>">
 
                         <?php if($projectPod->display('image') == '') { ?>
 
-                            <div class="crop" style="background: url(<?php echo bloginfo('template_url') ?>/img/backup.png) center no-repeat;background-size: auto 120%;"></div>
+                            <div class="crop" style="background: url(<?php echo bloginfo('template_url') ?>/img/backup.png) center no-repeat;background-size: auto 150%;"></div>
 
                         <?php } else { ?>
 
-                            <div class="crop" style="background: url(<?php echo $projectPod->display('image') ?>) center no-repeat;background-size: auto 120%;"></div>
+                            <div class="crop" style="background: url(<?php echo $projectPod->display('image') ?>) center no-repeat;background-size: auto 150%;"></div>
 
                         <?php }; ?>
 
@@ -71,23 +87,9 @@
 
                         <p>Location: <?php echo $projectPod->display('region'); ?></p>
 
+                        <p>Category: <?php echo $projectPod->display('category'); ?></p>
+
                     </div>
-
-                    <?php
-
-                        $author = $projectPod ->display('author.user_login');
-
-                        $current_user = wp_get_current_user();
-                        
-                        if ($author == $current_user->user_login) {
-
-                    ?>
-
-                       <p><a data-projid="<?php echo $projectPod ->field('id'); ?>" class="delete" href="#">Delete project</a></p>
-
-                       <p><a class="edit" href="<?php echo get_bloginfo('url'); ?>/edit/<?php echo $projectPod ->field('id'); ?>">Edit project</a></p>
-
-                    <?php } ?>
 
                 </a>
 
