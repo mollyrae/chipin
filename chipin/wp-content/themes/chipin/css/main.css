@@ -634,6 +634,31 @@ p.blurb {
     width: 60%;
 }
 
+.oops{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+.oops-login{
+    width:100%;
+    margin: 0 auto;
+}
+
+.oops a{
+width:40%; 
+text-align: center;
+display: inline;
+margin: 0 5%;
+font-size: 32px;
+}
+
+.oops h4{
+font-size: 1.5em;
+text-align: center;
+margin:0 0 5% 0;
+}
+
 .pods-submittable{
     /*font-family:nexa_lightregular,Trebuchet, Helvetica, sans-serif;*/
     font-size:1em;

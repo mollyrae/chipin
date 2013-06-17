@@ -27,8 +27,16 @@
                 echo $podForm->form($fields);
             
             }else{ ?>
+                <div class="oops">
+                    <h4>Oops, you need to be logged in to do this!</h4>
+                    <div class="oops-login">
+                         
+                        <div class="join-btn"><a class="toggle" href="#">Login</a></div>
+                        <div class="start-btn"><a href="<?php echo get_bloginfo('url'); ?>/register">Register</a></div>
+                        
+                    </div><!--/oops-login-->
+                </div><!--/opps-->
 
-                <h1>Please Login or Register to start a project.</h1>
 
             <?php }; ?>
 
